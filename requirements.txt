@@ -2,3 +2,4 @@ django<2
 newspaper
 pymongo
 tldextract
+python-social-auth

@@ -1579,12 +1579,12 @@
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #e44c65;
+		color: rgba(249, 197, 188, 0.54);
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			color: rgba(249, 197, 188, 0.54) !important;
 			border-bottom-color: transparent;
 		}
 
@@ -2133,7 +2133,7 @@
 	}
 
 		header.major:after {
-			background: #e44c65;
+			background: rgba(249, 197, 188, 0.54);
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2196,7 +2196,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e44c65;
+			border-color: rgba(249, 197, 188, 0.54);
 		}
 
 	.select-wrapper {
@@ -2313,7 +2313,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #e44c65;
+			border-color: rgba(249, 197, 188, 0.54);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2514,7 +2514,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		padding-left: 1em;
 	}
 
@@ -2734,8 +2734,8 @@
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			box-shadow: inset 0 0 0 1px rgba(249, 197, 188, 0.54);
+			color: rgba(249, 197, 188, 0.54) !important;
 		}
 
 		input[type="submit"]:active,
@@ -2779,7 +2779,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #e44c65;
+			background-color: rgba(249, 197, 188, 0.54);
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -3053,7 +3053,7 @@
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: rgba(249, 197, 188, 0.54);
 		}
 
 		.spotlight.style2 .content {
@@ -3115,7 +3115,7 @@
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: rgba(249, 197, 188, 0.54);
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3150,7 +3150,7 @@
 			.wrapper.style2 input[type="button"].special,
 			.wrapper.style2 .button.special {
 				background-color: #ffffff;
-				color: #e44c65 !important;
+				color: rgba(249, 197, 188, 0.54) !important;
 			}
 
 				.wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,
@@ -3254,7 +3254,7 @@
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #e44c65;
+				color: rgba(249, 197, 188, 0.54);
 			}
 
 		.dropotron.level-0 {
@@ -3344,7 +3344,7 @@
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #e44c65;
+						color: rgba(249, 197, 188, 0.54);
 					}
 
 					#header nav ul li > ul {
@@ -3823,7 +3823,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
+						background: rgba(249, 197, 188, 0.54);
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;

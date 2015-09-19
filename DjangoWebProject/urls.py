@@ -3,6 +3,8 @@ Definition of urls for DjangoWebProject.
 """
 
 from datetime import datetime
+from django.conf.urls import include, url
+from django.contrib import admin
 from django.conf.urls import patterns, url
 from app.forms import BootstrapAuthenticationForm
 
@@ -14,26 +16,8 @@ from app.forms import BootstrapAuthenticationForm
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'app.views.home', name='home'),
-    # url(r'^newsfeed', 'app.views.newsfeed', name='newsfeed'),
-    # url(r'^about', 'app.views.about', name='about'),
-    # url(r'^filter', 'app.views.filter', name='filter'),
-    # url(r'^login/$',
-    #     'django.contrib.auth.views.login',
-    #     {
-    #         'template_name': 'app/login.html',
-    #         'authentication_form': BootstrapAuthenticationForm,
-    #         'extra_context':
-    #         {
-    #             'title':'Log in',
-    #             'year':datetime.now().year,
-    #         }
-    #     },
-    #     name='login'),
-    # url(r'^fake','app.views.fake'),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
+    url('', include('django.contrib.auth.urls', namespace='auth')),
+    url('', include('social.apps.django_app.urls', namespace='social')),
+    
 )
