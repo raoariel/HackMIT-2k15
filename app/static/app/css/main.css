@@ -4032,3 +4032,9 @@
 					}
 
 	}
+
+	/* Table */
+	#input[type='search'] {
+		color: black;
+		margin-left: 5pt;
+	}

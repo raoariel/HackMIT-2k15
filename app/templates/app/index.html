@@ -9,21 +9,11 @@
 	<head>
 		<title>ReadRecipts</title>
 		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="/static/app/images/billInv.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" type="text/css" href="/static/app/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link rel="stylesheet" type="text/css" href="/static/app/css/jquery.css"> 
 		
-		<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
-		<script src="/static/app/js/dt.js" type="text/javascript"></script>
-		<script src="/static/app/js/dtui.js" type="text/javascript"></script>
-		<script>
-			$(document).ready(function() {
-		    $('#example').DataTable();
-			} );
-		</script>
+		
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -58,6 +48,9 @@
 							<header>
 								<h2>Logged In</h2>
 								<p>Insert table here</p>
+								<div class="add" style="text-align: center">
+										<button style="position:absolute; left: 50%;">Hello World</button>
+								</div>
 								<table id="example" class="display" cellspacing="0" width="100%">
 					        <thead>
 					            <tr>
@@ -69,18 +62,7 @@
 					                <th>Salary</th>
 					            </tr>
 					        </thead>
-					 
-					        <tfoot>
-					            <tr>
-					                <th>Name</th>
-					                <th>Position</th>
-					                <th>Office</th>
-					                <th>Age</th>
-					                <th>Start date</th>
-					                <th>Salary</th>
-					            </tr>
-					        </tfoot>
-					 
+
 					        <tbody>
 					            <tr>
 					                <td>Tiger Nixon</td>
@@ -236,6 +218,23 @@
 			<script src="/static/app/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/static/app/js/main.js"></script>
-
+			<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+		
+			<link rel="stylesheet" type="text/css" href="/static/app/css/jquery.css"> 
+			<script src="/static/app/js/dt.js" type="text/javascript"></script>
+			<script src="/static/app/js/dtui.js" type="text/javascript"></script>
+			<script>
+				$(document).ready(function() {
+			    $('#example').dataTable({
+				    "bPaginate": false,
+				    "bLengthChange": false,
+				    "bFilter": true,
+				    "bInfo": false,
+				    "bAutoWidth": false 
+					});
+					$("input[type='search']").attr("style","color:black; margin-left:10pt;");
+					$("thead").attr("style","cursor:pointer;");
+				});
+			</script>
 	</body>
 </html>
