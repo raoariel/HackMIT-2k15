@@ -13,6 +13,8 @@ from django.template.loader import render_to_string
 from datetime import datetime
 from django.http import HttpResponse
 from pymongo import *
+import pyqrcode
+import png
 
 sys.path.insert(0, 'app/nlp/')
 from FeedContent import *
@@ -43,3 +45,22 @@ def home(request):
 	# context = {'charityList': charities}
 	context = RequestContext(request, {'request': request, 'user': request.user})
 	return render(request, 'app/index.html', context)
+
+
+def qr(request):
+	"""Renders the home page."""
+	assert isinstance(request, HttpRequest)
+	# charities = []
+	# for key in parseCharityList():
+	# 	charities.append(key);
+	# context = {'charityList': charities}
+	context = RequestContext(request, {'request': request, 'user': request.user})
+	return render(request, 'app/qr.html', context)
+
+
+def qrcode(request):
+	"""Renders the home page."""
+	qr = pyqrcode.create("hello world")
+	qr.png('hackmitqr.png', scale=6)
+	console.log('pass')
+	return HttpRequest("pass")
